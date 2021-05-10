@@ -28,7 +28,8 @@ module.exports = {
         "guias/proceso-permisionado",
         "guias/instalacion-nodos",
         "guias/desplegar-contrato-inteligente",
-        "guias/contribuir"
+        "guias/contribuir",
+        "guias/test"
     ],
     "Herramientas": [
         "herramientas/monitor",

@@ -61,6 +61,10 @@ const siteConfig = {
         //   position: 'right',
         // },
         {
+          type: 'localeDropdown',
+          position: 'left'
+        },
+        {
           href: 'https://dashboard.latamlink.io/',
           label: 'Monitor de Red',
           position: 'right',
@@ -80,7 +84,7 @@ const siteConfig = {
           label: 'English',
           position: 'right',
         },
-        {to: 'search'},
+        {to: 'search'}
       ]
     },
     footer: {
@@ -155,7 +159,20 @@ const siteConfig = {
     'https://kit.fontawesome.com/6c84ac616f.js',
     'https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js',
   ],
-  
+  i18n: {
+    defaultLocale: 'es',
+    locales: ['es', 'en'],
+    localeConfigs: {
+      es: {
+        label: 'Español',
+        direction: 'ltr',
+      },
+      en: {
+        label: 'English',
+        direction: 'ltr',
+      }
+    },
+  }  
 };
 
 module.exports = siteConfig;
